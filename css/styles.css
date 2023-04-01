@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Phudu:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(/img/capy.png),auto;
+
+
+}
+
+body {
+    font-family:'Phudu', cursive; ;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        cursor: url(/img/capy.png),auto;
+
+}
+/*---Menu---*/
+.navbar-brand{
+    font-size:xx-large;
+    padding-right: 40px;
+}
+
+.navbar-brand,
+.navbar-item,
+.nav-link,
+.ubicacion,
+h1,
+h2{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(86, 86, 236), 0 0 5px darkblue;
+    letter-spacing: 5px;
+    cursor: url(/img/capy.png),auto;
+}
+
+.navbar-brand:hover,
+.navbar-item:hover,
+.nav-link:hover,
+h2:hover,
+
+h1{
+    color: #db94fc;
+}
+.navbar-toggler{
+    color: #f8f3f3;
+    box-shadow: #edf3f2;
+    background-color:#74ffe7;
+}
+
+/*---Countdown---*/
+.contador{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.countdown{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.countdown div{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    padding: 30px 10px;
+}
+p{
+    display: grid;
+    place-items: center;
+    border: ridge 1px #4ab4af;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #ff748c;
+    box-shadow: #000000;
+}
+span{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #74ffe7;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.final-sms{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(-100%);
+    transition: ease-in-out 0.5s;
+    background-color: #333;
+}
+.final-sms h2{
+    text-align: center;
+    font-size: 100px;
+    color: #fff;
+}
+
+/*---Invitacion---*/
+.invitacion{}
+
+.invitacion,
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        cursor: url(/img/capy.png),auto;
+}
+.look{
+    flex-direction: column;
+    padding-right: 40px;
+}
+
+/*---Invitacion---*/
+/*--video--*/
+.video{
+    flex-direction: column;
+    box-shadow: 1px 1px 1px rgb(252, 252, 252), 0 0 25px rgb(252, 252, 252), 0 0 25px rgb(252, 251, 253);
+}
+
+
+/*---Ubicacion---*/
+.ubicacion{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 25px;
+        cursor: url(/img/capy.png),auto;
+}
+/*---Footer---*/
+
+@media screen {
+    
+}
