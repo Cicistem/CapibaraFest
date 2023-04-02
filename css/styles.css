@@ -16,10 +16,15 @@ body {
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
-    background: #0f0c29;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        cursor: url(/img/capy.png),auto;
+    background: rgba(56, 22, 69, 1.0);
+    background: -webkit-radial-gradient(bottom, rgba(56, 22, 69, 1.0), rgba(17, 1, 66, 1.0));
+    background: -moz-radial-gradient(bottom, rgba(56, 22, 69, 1.0), rgba(17, 1, 66, 1.0));
+    background: radial-gradient(to top, rgba(56, 22, 69, 1.0), rgba(17, 1, 66, 1.0));
+
+    /*background: #0f0c29;  
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+        cursor: url(/img/capy.png),auto;*/
 
 }
 /*---Menu---*/
@@ -28,16 +33,20 @@ body {
     padding-right: 40px;
 }
 
+.nav-item{
+   padding-right: 30px; 
+}
+
 .navbar-brand,
 .navbar-item,
 .nav-link,
 .ubicacion,
 h1,
 h2{
-    color: white;
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(86, 86, 236), 0 0 5px darkblue;
     letter-spacing: 5px;
-    cursor: url(/img/capy.png),auto;
+    cursor: url(/img/capybara.png),auto;
 }
 
 .navbar-brand:hover,
@@ -52,22 +61,26 @@ h1{
     color: #f8f3f3;
     box-shadow: #edf3f2;
     background-color:#74ffe7;
+    margin-left: 14px;
 }
 
-/*---Countdown---*/
+/*---Contador---*/
+.logo {
+    padding-bottom: 50px;
+}
 .contador{
-
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   
 }
 .countdown{
     display: flex;
     justify-content: space-evenly;
     width: 50%;
     flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 45px;
 }
 .countdown div{
     display: grid;
@@ -120,7 +133,9 @@ span{
 }
 
 /*---Invitacion---*/
-.invitacion{}
+.invitacion{
+    padding-top: 10px;
+}
 
 .invitacion,
 .video{
@@ -132,6 +147,7 @@ span{
 .look{
     flex-direction: column;
     padding-right: 40px;
+    cursor: url(/img/capy.png),auto;
 }
 
 /*---Invitacion---*/
@@ -143,18 +159,32 @@ span{
 
 
 /*---Ubicacion---*/
+.mapa{
+    flex-direction: column;
+    filter: drop-shadow(8px 8px 8px #fff);
+    padding-right: 80px;
+
+}
 .ubicacion{
 
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding-top: 55px;
     padding-bottom: 25px;
         cursor: url(/img/capy.png),auto;
 }
 /*---Footer---*/
+.footer{
+    background-color: #1f1e1e;
+    padding: 1em 0;
+    text-align: center;
 
-@media screen {
+    bottom: 0;
+    width: 100%;
+}
+h5{
+    color: #c2bcbc;
     
 }
